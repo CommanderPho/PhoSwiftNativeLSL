@@ -114,8 +114,97 @@ archive_for_sdk() {
 
   if [ $need_build_fallback -eq 1 ]; then
     echo "Performing build for $selected_scheme ($sdk) and using build products." >&2
-    xcodebuild -project "$proj_path" -scheme "$selected_scheme" -configuration Release -sdk "$sdk" build SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES >/dev/null 2>&1
-    echo "$builddir/Release"
+    
+    # Handle iOS simulator: build for both arm64 and x86_64, then create universal binary
+    if [ "$sdk" = "iphonesimulator" ]; then
+      # Try to build for both architectures (x86_64 for Intel, arm64 for Apple Silicon)
+      archs=("x86_64" "arm64")
+      lib_paths=()
+      
+      # Build for each architecture
+      for arch in "${archs[@]}"; do
+        echo "Building for architecture: $arch" >&2
+        set +e
+        xcodebuild -project "$proj_path" -scheme "$selected_scheme" -configuration Release \
+          -sdk "$sdk" -arch "$arch" \
+          SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES \
+          CONFIGURATION_BUILD_DIR="$builddir/Release-$arch" >/dev/null 2>&1
+        build_rc=$?
+        set -e
+        
+        if [ $build_rc -eq 0 ]; then
+          # Find the built library - try CONFIGURATION_BUILD_DIR first, then search build directory
+          lib=$(find "$builddir/Release-$arch" -type f \( -name "liblsl*.dylib" -o -name "liblsl*.a" \) 2>/dev/null | head -n1 || true)
+          if [ -z "$lib" ] || [ ! -f "$lib" ]; then
+            # Fallback: search in standard build locations
+            lib=$(find "$builddir" -type f \( -name "liblsl*.dylib" -o -name "liblsl*.a" \) -path "*/Release*" 2>/dev/null | grep -i "$arch" | head -n1 || true)
+          fi
+          if [ -n "$lib" ] && [ -f "$lib" ]; then
+            lib_paths+=("$lib")
+            echo "Found library for $arch: $lib" >&2
+          else
+            echo "Warning: Library not found for $arch after build" >&2
+          fi
+        else
+          echo "Build for $arch failed (may not be supported on this host)" >&2
+        fi
+      done
+      
+      # Create universal binary if we have multiple architectures
+      if [ ${#lib_paths[@]} -gt 1 ]; then
+        echo "Creating universal binary from ${lib_paths[*]}" >&2
+        # Determine library name from first library
+        base_lib="${lib_paths[0]}"
+        if [[ "$base_lib" == *.dylib ]]; then
+          lib_name="liblsl.dylib"
+        else
+          lib_name="liblsl.a"
+        fi
+        universal_lib="$builddir/Release/$lib_name"
+        mkdir -p "$builddir/Release"
+        lipo -create "${lib_paths[@]}" -output "$universal_lib" || {
+          echo "lipo failed, using first architecture library" >&2
+          cp "${lib_paths[0]}" "$universal_lib"
+        }
+        echo "$builddir/Release"
+      elif [ ${#lib_paths[@]} -eq 1 ]; then
+        # Single architecture, copy to Release directory
+        echo "Using single architecture library" >&2
+        mkdir -p "$builddir/Release"
+        cp "${lib_paths[0]}" "$builddir/Release/"
+        echo "$builddir/Release"
+      else
+        echo "Error: No libraries built for iphonesimulator" >&2
+        exit 1
+      fi
+      popd >/dev/null
+      return 0
+    fi
+    
+    # For iphoneos, explicitly build for arm64
+    if [ "$sdk" = "iphoneos" ]; then
+      echo "Building for architecture: arm64 (device)" >&2
+      xcodebuild -project "$proj_path" -scheme "$selected_scheme" -configuration Release \
+        -sdk "$sdk" -arch arm64 \
+        SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES >/dev/null 2>&1
+    else
+      # For other SDKs, use default build
+      xcodebuild -project "$proj_path" -scheme "$selected_scheme" -configuration Release \
+        -sdk "$sdk" build SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES >/dev/null 2>&1
+    fi
+    
+    # Discover actual build output location (can vary by SDK)
+    # Try multiple possible locations
+    lib_path=$(find "$builddir" -type f \( -name "liblsl*.dylib" -o -name "liblsl*.a" \) \
+      \( -path "*/Release/*" -o -path "*/Release-*/*" -o -path "*/Release" \) 2>/dev/null | head -n1 || true)
+    
+    if [ -n "$lib_path" ] && [ -f "$lib_path" ]; then
+      output_dir=$(dirname "$lib_path")
+      echo "$output_dir"
+    else
+      # Fallback to standard Release directory (may need to check if build actually succeeded)
+      echo "$builddir/Release"
+    fi
     popd >/dev/null
     return 0
   fi
@@ -127,44 +216,54 @@ archive_for_sdk() {
 declare -a SDKS=( "macosx" "iphoneos" "iphonesimulator" "watchos" "watchsimulator" )
 
 # Configure and archive per SDK
-declare -a ARCHIVES=()
+declare -a BUILD_OUTPUTS=()
+declare -A SDK_TO_OUTPUT=()
 for sdk in "${SDKS[@]}"; do
   bd="$BUILD_DIR_BASE/$sdk"
   echo "Configuring CMake for $sdk -> $bd"
   cmake_configure "$bd"
   echo "Archiving for sdk $sdk"
-  arc=$(archive_for_sdk "$bd" "$sdk" "$sdk")
-  if [ -d "$arc" ]; then
-    ARCHIVES+=("$arc")
+  output=$(archive_for_sdk "$bd" "$sdk" "$sdk")
+  if [ -n "$output" ] && [ -d "$output" ]; then
+    BUILD_OUTPUTS+=("$output")
+    SDK_TO_OUTPUT["$sdk"]="$output"
   fi
 done
 
-# Collect framework/library + headers from archives
+# Collect framework/library + headers from build outputs (archives or build directories)
 found_frameworks=()
 found_libraries=()
 found_headers=()
 
-for arc in "${ARCHIVES[@]}"; do
-  # Typical framework location:
-  fw=$(find "$arc" -path "*/Products/Library/Frameworks/*.framework" | head -n1 || true)
-  if [ -n "$fw" ] && [ -d "$fw" ]; then
-    echo "Found framework: $fw"
-    found_frameworks+=("$fw")
-    continue
+# Use include directory from source for headers (consistent across all builds)
+headers_dir="$CLONE_DIR/include"
+if [ -d "$headers_dir" ]; then
+  found_headers+=("$headers_dir")
+fi
+
+for output in "${BUILD_OUTPUTS[@]}"; do
+  # Check if this is an archive (has Products directory) or a build directory
+  if [ -d "$output/Products" ]; then
+    # This is an xcarchive - look for frameworks in Products
+    fw=$(find "$output" -path "*/Products/Library/Frameworks/*.framework" | head -n1 || true)
+    if [ -n "$fw" ] && [ -d "$fw" ]; then
+      echo "Found framework: $fw"
+      found_frameworks+=("$fw")
+      continue
+    fi
+    # Look for libraries in archive Products
+    lib=$(find "$output/Products" -name "liblsl*.dylib" | head -n1 || true)
+    if [ -z "$lib" ]; then
+      lib=$(find "$output/Products" -name "liblsl*.a" | head -n1 || true)
+    fi
+  else
+    # This is a build directory - look for libraries directly
+    lib=$(find "$output" -maxdepth 1 -type f \( -name "liblsl*.dylib" -o -name "liblsl*.a" \) | head -n1 || true)
   fi
-  # Prefer dynamic library; fall back to static if needed (xcframework from dylib is more Tuist-friendly)
-  lib=$(find "$arc" -name "lib*.dylib" | head -n1 || true)
-  if [ -z "$lib" ]; then
-    lib=$(find "$arc" -name "lib*.a" | head -n1 || true)
-  fi
-  if [ -n "$lib" ]; then
+  
+  if [ -n "$lib" ] && [ -f "$lib" ]; then
     echo "Found library: $lib"
     found_libraries+=("$lib")
-  fi
-  # headers
-  hdr=$(find "$arc" -name "*.h" | head -n1 || true)
-  if [ -n "$hdr" ]; then
-    found_headers+=("$(dirname "$hdr")")
   fi
 done
 
@@ -184,15 +283,17 @@ if [ ${#found_frameworks[@]} -gt 0 ]; then
 else
   # Create xcframework from static/dylib + headers (use -library + -headers for each slice)
   if [ ${#found_libraries[@]} -eq 0 ]; then
-    echo "No frameworks or libraries found in archives; aborting." >&2
+    echo "No frameworks or libraries found in build outputs; aborting." >&2
     exit 1
   fi
   create_cmd=(xcodebuild -create-xcframework)
-  idx=0
+  # Use the shared headers directory for all libraries (from source)
+  hdrdir="${found_headers[0]:-$CLONE_DIR/include}"
+  if [ ! -d "$hdrdir" ]; then
+    echo "Warning: Headers directory not found at $hdrdir, libraries may be incomplete" >&2
+  fi
   for lib in "${found_libraries[@]}"; do
-    hdrdir="${found_headers[$idx]:-$(dirname "$lib")}"
     create_cmd+=(-library "$lib" -headers "$hdrdir")
-    idx=$((idx+1))
   done
   create_cmd+=(-output "$XC_OUT")
   "${create_cmd[@]}"

@@ -1,0 +1,11 @@
+/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir
+/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lsl.dir
+/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslver.dir
+/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/package.dir
+/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/package_source.dir
+/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/edit_cache.dir
+/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/rebuild_cache.dir
+/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/list_install_components.dir
+/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/install.dir
+/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/install/local.dir
+/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/install/strip.dir

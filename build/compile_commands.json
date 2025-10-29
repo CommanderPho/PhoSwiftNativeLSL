@@ -1,0 +1,194 @@
+[
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/api_config.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/api_config.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/api_config.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/api_config.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/cancellation.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/cancellation.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/cancellation.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/cancellation.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/common.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/common.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/common.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/common.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/consumer_queue.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/consumer_queue.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/consumer_queue.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/consumer_queue.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/data_receiver.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/data_receiver.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/data_receiver.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/data_receiver.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/info_receiver.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/info_receiver.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/info_receiver.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/info_receiver.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/inlet_connection.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/inlet_connection.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/inlet_connection.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/inlet_connection.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/lsl_resolver_c.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/lsl_resolver_c.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/lsl_resolver_c.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/lsl_resolver_c.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/lsl_inlet_c.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/lsl_inlet_c.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/lsl_inlet_c.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/lsl_inlet_c.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/lsl_outlet_c.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/lsl_outlet_c.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/lsl_outlet_c.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/lsl_outlet_c.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/lsl_streaminfo_c.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/lsl_streaminfo_c.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/lsl_streaminfo_c.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/lsl_streaminfo_c.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/lsl_xml_element_c.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/lsl_xml_element_c.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/lsl_xml_element_c.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/lsl_xml_element_c.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/netinterfaces.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/netinterfaces.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/netinterfaces.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/netinterfaces.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/resolver_impl.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/resolver_impl.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/resolver_impl.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/resolver_impl.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/resolve_attempt_udp.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/resolve_attempt_udp.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/resolve_attempt_udp.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/resolve_attempt_udp.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/sample.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/sample.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/sample.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/sample.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/send_buffer.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/send_buffer.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/send_buffer.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/send_buffer.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/socket_utils.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/socket_utils.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/socket_utils.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/socket_utils.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/stream_info_impl.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/stream_info_impl.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/stream_info_impl.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/stream_info_impl.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/stream_outlet_impl.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/stream_outlet_impl.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/stream_outlet_impl.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/stream_outlet_impl.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/tcp_server.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/tcp_server.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/tcp_server.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/tcp_server.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/time_postprocessor.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/time_postprocessor.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/time_postprocessor.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/time_postprocessor.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/time_receiver.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/time_receiver.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/time_receiver.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/time_receiver.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/udp_server.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/udp_server.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/udp_server.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/udp_server.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/util/cast.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/util/cast.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/util/cast.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/util/cast.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/util/endian.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/util/endian.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/util/endian.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/util/endian.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/util/inireader.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/util/inireader.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/util/inireader.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/util/inireader.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/src/util/strfuns.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/util/strfuns.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/util/strfuns.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/src/util/strfuns.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -DLOGURU_STACKTRACES=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/thirdparty/loguru/loguru.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru/loguru.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru/loguru.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/thirdparty/loguru/loguru.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DBOOST_ALL_NO_LIB -DLIBLSL_EXPORTS -DLOGURU_DEBUG_LOGGING=0 -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/lslboost -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lslobj.dir/thirdparty/pugixml/pugixml.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml/pugixml.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml/pugixml.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslobj.dir/thirdparty/pugixml/pugixml.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang++ -DASIO_NO_DEPRECATED -DLIBLSL_EXPORTS -Dlsl_EXPORTS -DLSL_LIBRARY_INFO_STR=\\\"git:/branch:dev/build:Debug/compiler:AppleClang-15.0.0.15000100/link:SHARED\\\" -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/include -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/pugixml -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/loguru -isystem /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/thirdparty/asio -g -std=gnu++17 -flto=thin -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/lsl.dir/src/buildinfo.cpp.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/buildinfo.cpp",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/src/buildinfo.cpp",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lsl.dir/src/buildinfo.cpp.o"
+},
+{
+  "directory": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build",
+  "command": "/usr/bin/clang -DLIBLSL_EXPORTS -I/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/include -g -flto=thin -fPIE -o CMakeFiles/lslver.dir/testing/lslver.c.o -c /Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/testing/lslver.c",
+  "file": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/liblsl-tuist-workspace/third_party/liblsl/testing/lslver.c",
+  "output": "/Users/pho/repo/EmotivEpocRepos2025/PhoSwiftNativeLSL/build/CMakeFiles/lslver.dir/testing/lslver.c.o"
+}
+]
