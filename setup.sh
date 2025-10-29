@@ -200,6 +200,13 @@ fi
 
 echo "XCFramework created: $XC_OUT"
 
+# Skip Tuist scaffolding if XCFramework doesn't contain Apple .framework bundles
+if ! find "$XC_OUT" -name "*.framework" -print -quit | grep -q .; then
+  echo "XCFramework contains libraries (dylib/static) but no .framework bundles; skipping Tuist scaffolding."
+  echo "You can integrate the XCFramework manually from: $XC_OUT"
+  exit 0
+fi
+
 # --- Tuist project scaffolding ---
 ROOT="$WORKDIR/$TUIST_PROJECT_NAME"
 rm -rf "$ROOT"
