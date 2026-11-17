@@ -1,0 +1,20 @@
+# Local / IDE
+.DS_Store
+.vscode/
+
+# Root cmake leftovers
+/build/
+
+# liblsl build intermediates (recreated by setup.sh)
+liblsl-tuist-workspace/build/
+liblsl-tuist-workspace/archives/
+liblsl-tuist-workspace/third_party/
+liblsl-tuist-workspace/Frameworks/dist/
+
+# Duplicate xcframework at workspace root; commit the LSLExampleWorkspace copy
+liblsl-tuist-workspace/Frameworks/liblsl.xcframework/
+
+# Generated Xcode / Tuist artifacts
+**/DerivedData/
+**/*.xcuserdata/
+**/xcuserdata/
